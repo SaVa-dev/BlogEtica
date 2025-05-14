@@ -4,6 +4,9 @@ import { useState } from 'react';
 export default function Blog() {
   const [activeSubtema, setActiveSubtema] = useState(1);
   
+  // Ruta base para el proyecto
+  const basePath = process.env.PUBLIC_URL || '';
+  
   // Datos de los subtemas
   const subtemas = [
     {
@@ -23,15 +26,15 @@ export default function Blog() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/carta-tierra/cartatierra.jpg" alt="Carta de la Tierra" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/carta-tierra/cartatierra.jpg"} alt="Carta de la Tierra" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">La Carta de la Tierra, documento firmado en 2000</p>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/carta-tierra/pilares.png" alt="Los 4 pilares de la Carta de la Tierra" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/carta-tierra/pilares.png"} alt="Los 4 pilares de la Carta de la Tierra" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Los 4 pilares fundamentales</p>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/carta-tierra/aplicaciones.jpg" alt="Aplicaciones de la Carta de la Tierra" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/carta-tierra/aplicaciones.jpg"} alt="Aplicaciones de la Carta de la Tierra" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Educación ambiental basada en la Carta</p>
             </div>
           </div>
@@ -64,15 +67,15 @@ export default function Blog() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/agencia-ciudadana/ciudadanos1.jpg" alt="Presupuestos participativos" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/agencia-ciudadana/ciudadanos1.jpg"} alt="Presupuestos participativos" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Ciudadanos votando en presupuestos participativos</p>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/agencia-ciudadana/ciudadanos2.jpeg" alt="Feria de asociaciones" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/agencia-ciudadana/ciudadanos2.jpeg"} alt="Feria de asociaciones" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Feria de Asociaciones ciudadanas</p>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/agencia-ciudadana/ciudadanos3.JPG" alt="Mesa redonda sobre democracia" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/agencia-ciudadana/ciudadanos3.JPG"} alt="Mesa redonda sobre democracia" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Mesa redonda sobre democracia participativa</p>
             </div>
           </div>
@@ -118,15 +121,15 @@ export default function Blog() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/exclusion-social/pakistan.jpg" alt="Conflicto Pakistán" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/exclusion-social/pakistan.jpg"} alt="Conflicto Pakistán" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Conflicto en Pakistán</p>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/exclusion-social/conquista.jpg" alt="Conquista española" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/exclusion-social/conquista.jpg"} alt="Conquista española" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Asimilación durante la conquista española</p>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/exclusion-social/comunidadindigena.jpg" alt="Desplazamiento indígena" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/exclusion-social/comunidadindigena.jpg"} alt="Desplazamiento indígena" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Desplazamiento de comunidades indígenas</p>
             </div>
           </div>
@@ -153,15 +156,15 @@ export default function Blog() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/empatia/escuchaactiva.webp" alt="Escucha activa" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/empatia/escuchaactiva.webp"} alt="Escucha activa" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Escucha activa y validación emocional</p>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/empatia/dialogo.jpg" alt="Comprensión intercultural" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/empatia/dialogo.jpg"} alt="Comprensión intercultural" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Diálogo intercultural y empatía</p>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/empatia/padreehijo.webp" alt="Conexión familiar" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/empatia/padreehijo.webp"} alt="Conexión familiar" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Conexión emocional entre padres e hijos</p>
             </div>
           </div>
@@ -200,15 +203,15 @@ export default function Blog() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/imperativos-eticos/Imperativo-categorico.jpg" alt="Imperativo categórico de Kant" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/imperativos-eticos/Imperativo-categorico.jpg"} alt="Imperativo categórico de Kant" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Representación del imperativo categórico</p>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/imperativos-eticos/hans.jpeg" alt="Hans Jonas y la ética de la responsabilidad" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/imperativos-eticos/hans.jpeg"} alt="Hans Jonas y la ética de la responsabilidad" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Hans Jonas y la ética de la responsabilidad</p>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <img src="/images/imperativos-eticos/terceraimagen.webp" alt="Acciones sostenibles" className="w-full h-48 object-cover" />
+              <img src={process.env.PUBLIC_URL + "/images/imperativos-eticos/terceraimagen.webp"} alt="Acciones sostenibles" className="w-full h-48 object-cover" />
               <p className="text-sm text-center p-2 bg-gray-100">Acciones sostenibles como aplicación del imperativo ético</p>
             </div>
           </div>
